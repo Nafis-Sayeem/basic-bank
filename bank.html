@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank inside</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="font-semibold">
+        <h1 class="text-5xl text-center mt-5 text-red-700 bg-red-200 mx-4 p-5">letas getsome <span class="font-semibold text-red-800">mo ney</span></h1>
+    </header>
+    <main>
+        <section class="flex flex-col items-center">
+            <div class="grid grid-cols-3 gap-4 bg-red-200 m-5 mt-10 p-5 w-9/12 ">
+                <div class="bg-red-600 p-5 rounded-lg ">
+                    <p class="text-2xl text-white font-bold">deposite</p>
+                    <p class="text-fxl text-white">$ <span  id="dep-amount">00</span> </p>  
+                </div>
+                <div class="bg-red-600 p-5 rounded-lg ">
+                    <p class="text-2xl text-white font-bold">withdraw</p>
+                    <p class="text-fxl text-white">$ <span id="wid-amount"> 00</span></p>  
+                </div>
+                <div class="bg-red-600 p-5 rounded-lg ">
+                    <p class="text-2xl text-white font-bold">balance</p>
+                    <p class="text-fxl text-white " >$ <span id="balance">1200</span></p>  
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col items-center">
+            <div class="grid grid-cols-2 gap-4 bg-red-200 m-5 mt-10 p-5 w-9/12 ">
+                <div class="bg-red-600 p-5 rounded-lg ">
+                    <p class="text-2xl text-white font-bold mb-2">please deposite</p>
+                    <input id="input-dep" type="text" name=""  class="block w-9/12 m-2 p-2 " placeholder=" $ amount you wanna dep">
+                
+                <button id="btn-dep" class="bg-red-400  hover:bg-red-700 text-white m-2 p-2  rounded-lg w-9/12">deposite</button> 
+                </div>
+                <div class="bg-red-600 p-5 rounded-lg ">
+                    <p class="text-2xl text-white font-bold mb-2">please withdraw</p>
+                    <input id="input-wid" type="text" name=""  class="block w-9/12 m-2 p-2 " placeholder="$ amount you wanna widd">
+                
+                <button id="btn-wid" class="bg-red-400  hover:bg-red-700 text-white m-2 p-2  rounded-lg w-9/12">withdraw</button>
+                </div>
+               
+            </div>
+        </section>
+    
+    </main>
+    <script src="bank-func.js"></script>
+    <script src="withdraw.js"></script>
+</body>
+</html>
